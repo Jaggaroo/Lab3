@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.inft4001.StringCalculatorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-02-10T21:42:51" hostname="DESKTOP-ADCFQCE" time="0.004">
+  <properties/>
+  <testcase name="when2NumbersAreUsedThenNoExceptionIsThrown" classname="com.inft4001.StringCalculatorTest" time="0.003"/>
+  <testcase name="whenNonNumberIsUsedThenExceptionIsThrown" classname="com.inft4001.StringCalculatorTest" time="0.001"/>
+  <testcase name="whenMoreThan2NumbersAreUsedThenExceptionIsThrown" classname="com.inft4001.StringCalculatorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
