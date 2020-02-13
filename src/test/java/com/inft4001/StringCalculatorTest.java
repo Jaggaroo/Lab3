@@ -2,6 +2,7 @@ package com.inft4001;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.rules.DisableOnDebug;
 
 public class StringCalculatorTest {
 //    @Test(expected = RuntimeException.class)
@@ -70,5 +71,11 @@ public class StringCalculatorTest {
     public final void whenOneOrMoreNumbersAreGreaterThan1000IsUsedThenItIsNotIncludedInSum() {
         Assert.assertEquals(3+1000+6, StringCalculator.add("3,1000,1001,6,1234"));
     }
+
+    @Test
+    public final void whenDelimiterIsSpecifiedOfAnyLengthThenItIsUsedToSeparateNumbers() {
+        Assert.assertEquals(2+4+8, StringCalculator.add("//---\n---2---4---8"));
+    }
+
 
 } // END class StringCalculatorTest
