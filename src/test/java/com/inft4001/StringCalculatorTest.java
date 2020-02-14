@@ -55,6 +55,7 @@ public class StringCalculatorTest {
     public final void whenNegativeNumberIsUsedThenRuntimeExceptionIsThrown() {
         StringCalculator.add("3,-6,15,18,46,33");
     }
+
     @Test
     public final void whenNegativeNumbersAreUsedThenRuntimeExceptionIsThrown() {
         RuntimeException exception = null;
@@ -74,7 +75,12 @@ public class StringCalculatorTest {
 
     @Test
     public final void whenDelimiterIsSpecifiedOfAnyLengthThenItIsUsedToSeparateNumbers() {
-        Assert.assertEquals(2+4+8, StringCalculator.add("//---\n---2---4---8"));
+        Assert.assertEquals(2+4+8, StringCalculator.add("//---n---2-4----8"));
+    }
+
+    @Test
+    public final void whenMultipleDelimitersAreSpecifiedOfAnyLengthThenItIsUsedToSeparateNumbers() {
+        Assert.assertEquals(2+4+8, StringCalculator.add("//---n%n---2%4--8"));
     }
 
 

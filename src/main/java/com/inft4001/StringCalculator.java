@@ -7,7 +7,7 @@ public class StringCalculator {
 
 
     public static int add(final String numbers) {
-        String delimiter = ",|n";
+        String delimiter = ",|--|%|n";
         String numbersWithoutDelimiter = numbers;
         if (numbers.startsWith("//")) {
             int delimiterIndex = numbers.indexOf("//") + 2;

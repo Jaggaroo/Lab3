@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.inft4001.StringCalculatorTest" tests="12" skipped="0" failures="1" errors="0" timestamp="2020-02-13T00:55:08" hostname="DESKTOP-ADCFQCE" time="0.009">
+<testsuite name="com.inft4001.StringCalculatorTest" tests="13" skipped="0" failures="1" errors="0" timestamp="2020-02-14T01:58:46" hostname="DESKTOP-ADCFQCE" time="0.006">
   <properties/>
-  <testcase name="when2NumbersAreUsedThenNoExceptionIsThrown" classname="com.inft4001.StringCalculatorTest" time="0.002"/>
-  <testcase name="whenTwoNumbersAreUsedThenReturnValueIsTheirSum" classname="com.inft4001.StringCalculatorTest" time="0.0"/>
-  <testcase name="whenOneNumberIsUsedThenReturnValueIsThatSameNumber" classname="com.inft4001.StringCalculatorTest" time="0.0"/>
-  <testcase name="whenDelimiterIsSpecifiedThenItIsUsedToSeparateNumbers" classname="com.inft4001.StringCalculatorTest" time="0.0"/>
-  <testcase name="whenEmptyStringIsUsedThenReturnValueIs0" classname="com.inft4001.StringCalculatorTest" time="0.001"/>
-  <testcase name="whenNegativeNumberIsUsedThenRuntimeExceptionIsThrown" classname="com.inft4001.StringCalculatorTest" time="0.0"/>
-  <testcase name="whenDelimiterIsSpecifiedOfAnyLengthThenItIsUsedToSeparateNumbers" classname="com.inft4001.StringCalculatorTest" time="0.003">
-    <failure message="java.lang.NumberFormatException: For input string: &quot;//&quot;" type="java.lang.NumberFormatException">java.lang.NumberFormatException: For input string: &quot;//&quot;
+  <testcase name="whenMultipleDelimitersAreSpecifiedOfAnyLengthThenItIsUsedToSeparateNumbers" classname="com.inft4001.StringCalculatorTest" time="0.003">
+    <failure message="java.lang.NumberFormatException: For input string: &quot;%n&quot;" type="java.lang.NumberFormatException">java.lang.NumberFormatException: For input string: &quot;%n&quot;
 	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
 	at java.base/java.lang.Integer.parseInt(Integer.java:638)
 	at java.base/java.lang.Integer.parseInt(Integer.java:770)
 	at com.inft4001.StringCalculator.add(StringCalculator.java:26)
 	at com.inft4001.StringCalculator.add(StringCalculator.java:17)
-	at com.inft4001.StringCalculatorTest.whenDelimiterIsSpecifiedOfAnyLengthThenItIsUsedToSeparateNumbers(StringCalculatorTest.java:77)
+	at com.inft4001.StringCalculatorTest.whenMultipleDelimitersAreSpecifiedOfAnyLengthThenItIsUsedToSeparateNumbers(StringCalculatorTest.java:83)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -64,6 +58,13 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
+  <testcase name="when2NumbersAreUsedThenNoExceptionIsThrown" classname="com.inft4001.StringCalculatorTest" time="0.0"/>
+  <testcase name="whenTwoNumbersAreUsedThenReturnValueIsTheirSum" classname="com.inft4001.StringCalculatorTest" time="0.0"/>
+  <testcase name="whenOneNumberIsUsedThenReturnValueIsThatSameNumber" classname="com.inft4001.StringCalculatorTest" time="0.0"/>
+  <testcase name="whenDelimiterIsSpecifiedThenItIsUsedToSeparateNumbers" classname="com.inft4001.StringCalculatorTest" time="0.0"/>
+  <testcase name="whenEmptyStringIsUsedThenReturnValueIs0" classname="com.inft4001.StringCalculatorTest" time="0.0"/>
+  <testcase name="whenNegativeNumberIsUsedThenRuntimeExceptionIsThrown" classname="com.inft4001.StringCalculatorTest" time="0.0"/>
+  <testcase name="whenDelimiterIsSpecifiedOfAnyLengthThenItIsUsedToSeparateNumbers" classname="com.inft4001.StringCalculatorTest" time="0.0"/>
   <testcase name="whenNonNumberIsUsedThenExceptionIsThrown" classname="com.inft4001.StringCalculatorTest" time="0.0"/>
   <testcase name="whenNewLineIsUsedBetweenNumbersThenReturnValuesAreTheirSums" classname="com.inft4001.StringCalculatorTest" time="0.0"/>
   <testcase name="whenOneOrMoreNumbersAreGreaterThan1000IsUsedThenItIsNotIncludedInSum" classname="com.inft4001.StringCalculatorTest" time="0.0"/>
