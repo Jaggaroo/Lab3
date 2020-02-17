@@ -3,6 +3,9 @@ package com.inft4001;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.rules.DisableOnDebug;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.regex.*;
 
 public class StringCalculatorTest {
 //    @Test(expected = RuntimeException.class)
@@ -79,9 +82,12 @@ public class StringCalculatorTest {
     }
 
     @Test
-    public final void whenMultipleDelimitersAreSpecifiedOfAnyLengthThenItIsUsedToSeparateNumbers() {
-        Assert.assertEquals(2+4+8, StringCalculator.add("//---n%n---2%4--8"));
+    public final void whenMultipleDelimitersAreSpecifiedThenItIsUsedToSeparateNumbers() {
+        Assert.assertEquals(2+4+9+11+15, StringCalculator.add("//-%n-2%4-9%11-15"));
     }
 
-
+    @Test
+    public final void whenMultipleDelimitersAreSpecifiedOfAnyLengthThenItIsUsedToSeparateNumbers() {
+        Assert.assertEquals(2+4+8+11, StringCalculator.add("//--%%n---2%4--8%%11"));
+    }
 } // END class StringCalculatorTest
